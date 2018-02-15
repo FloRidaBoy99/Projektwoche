@@ -28,19 +28,19 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.listBox1 = new System.Windows.Forms.ListBox();
+			this.listBoxSchueler = new System.Windows.Forms.ListBox();
 			this.buttonNeu = new System.Windows.Forms.Button();
 			this.buttonLöschen = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.textBoxVorname = new System.Windows.Forms.TextBox();
+			this.textBoxNachname = new System.Windows.Forms.TextBox();
+			this.textBoxEmail = new System.Windows.Forms.TextBox();
+			this.textBoxSchule = new System.Windows.Forms.TextBox();
+			this.textBoxLehrkraft = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.comboBoxKlasse = new System.Windows.Forms.ComboBox();
+			this.comboBoxAbschluss = new System.Windows.Forms.ComboBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
@@ -48,13 +48,13 @@
 			this.buttonSpeichern = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// listBox1
+			// listBoxSchueler
 			// 
-			this.listBox1.FormattingEnabled = true;
-			this.listBox1.Location = new System.Drawing.Point(4, 4);
-			this.listBox1.Name = "listBox1";
-			this.listBox1.Size = new System.Drawing.Size(157, 212);
-			this.listBox1.TabIndex = 0;
+			this.listBoxSchueler.FormattingEnabled = true;
+			this.listBoxSchueler.Location = new System.Drawing.Point(4, 4);
+			this.listBoxSchueler.Name = "listBoxSchueler";
+			this.listBoxSchueler.Size = new System.Drawing.Size(157, 212);
+			this.listBoxSchueler.TabIndex = 0;
 			// 
 			// buttonNeu
 			// 
@@ -83,40 +83,42 @@
 			this.label1.TabIndex = 4;
 			this.label1.Text = "Vorname";
 			// 
-			// textBox1
+			// textBoxVorname
 			// 
-			this.textBox1.Location = new System.Drawing.Point(325, 4);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 5;
+			this.textBoxVorname.Location = new System.Drawing.Point(325, 4);
+			this.textBoxVorname.Name = "textBoxVorname";
+			this.textBoxVorname.Size = new System.Drawing.Size(100, 20);
+			this.textBoxVorname.TabIndex = 5;
 			// 
-			// textBox2
+			// textBoxNachname
 			// 
-			this.textBox2.Location = new System.Drawing.Point(325, 31);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(100, 20);
-			this.textBox2.TabIndex = 6;
+			this.textBoxNachname.Location = new System.Drawing.Point(325, 31);
+			this.textBoxNachname.Name = "textBoxNachname";
+			this.textBoxNachname.Size = new System.Drawing.Size(100, 20);
+			this.textBoxNachname.TabIndex = 6;
 			// 
-			// textBox3
+			// textBoxEmail
 			// 
-			this.textBox3.Location = new System.Drawing.Point(325, 58);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(100, 20);
-			this.textBox3.TabIndex = 7;
+			this.textBoxEmail.Location = new System.Drawing.Point(325, 58);
+			this.textBoxEmail.Name = "textBoxEmail";
+			this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
+			this.textBoxEmail.TabIndex = 7;
 			// 
-			// textBox4
+			// textBoxSchule
 			// 
-			this.textBox4.Location = new System.Drawing.Point(325, 140);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(100, 20);
-			this.textBox4.TabIndex = 8;
+			this.textBoxSchule.Enabled = false;
+			this.textBoxSchule.Location = new System.Drawing.Point(325, 140);
+			this.textBoxSchule.Name = "textBoxSchule";
+			this.textBoxSchule.Size = new System.Drawing.Size(100, 20);
+			this.textBoxSchule.TabIndex = 8;
 			// 
-			// textBox5
+			// textBoxLehrkraft
 			// 
-			this.textBox5.Location = new System.Drawing.Point(325, 167);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(100, 20);
-			this.textBox5.TabIndex = 9;
+			this.textBoxLehrkraft.Enabled = false;
+			this.textBoxLehrkraft.Location = new System.Drawing.Point(325, 167);
+			this.textBoxLehrkraft.Name = "textBoxLehrkraft";
+			this.textBoxLehrkraft.Size = new System.Drawing.Size(100, 20);
+			this.textBoxLehrkraft.TabIndex = 9;
 			// 
 			// label2
 			// 
@@ -136,23 +138,24 @@
 			this.label3.TabIndex = 11;
 			this.label3.Text = "Email";
 			// 
-			// comboBox1
+			// comboBoxKlasse
 			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(325, 85);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(121, 21);
-			this.comboBox1.TabIndex = 12;
+			this.comboBoxKlasse.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBoxKlasse.FormattingEnabled = true;
+			this.comboBoxKlasse.Location = new System.Drawing.Point(325, 85);
+			this.comboBoxKlasse.Name = "comboBoxKlasse";
+			this.comboBoxKlasse.Size = new System.Drawing.Size(121, 21);
+			this.comboBoxKlasse.TabIndex = 12;
 			// 
-			// comboBox2
+			// comboBoxAbschluss
 			// 
-			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(325, 113);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(121, 21);
-			this.comboBox2.TabIndex = 13;
+			this.comboBoxAbschluss.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBoxAbschluss.Enabled = false;
+			this.comboBoxAbschluss.FormattingEnabled = true;
+			this.comboBoxAbschluss.Location = new System.Drawing.Point(325, 113);
+			this.comboBoxAbschluss.Name = "comboBoxAbschluss";
+			this.comboBoxAbschluss.Size = new System.Drawing.Size(121, 21);
+			this.comboBoxAbschluss.TabIndex = 13;
 			// 
 			// label4
 			// 
@@ -208,19 +211,19 @@
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.label5);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.comboBox2);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.comboBoxAbschluss);
+			this.Controls.Add(this.comboBoxKlasse);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.textBox5);
-			this.Controls.Add(this.textBox4);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.textBoxLehrkraft);
+			this.Controls.Add(this.textBoxSchule);
+			this.Controls.Add(this.textBoxEmail);
+			this.Controls.Add(this.textBoxNachname);
+			this.Controls.Add(this.textBoxVorname);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.buttonLöschen);
 			this.Controls.Add(this.buttonNeu);
-			this.Controls.Add(this.listBox1);
+			this.Controls.Add(this.listBoxSchueler);
 			this.Name = "Schueler";
 			this.Size = new System.Drawing.Size(509, 282);
 			this.ResumeLayout(false);
@@ -230,19 +233,19 @@
 
 		#endregion
 
-		private System.Windows.Forms.ListBox listBox1;
+		private System.Windows.Forms.ListBox listBoxSchueler;
 		private System.Windows.Forms.Button buttonNeu;
 		private System.Windows.Forms.Button buttonLöschen;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox textBoxVorname;
+		private System.Windows.Forms.TextBox textBoxNachname;
+		private System.Windows.Forms.TextBox textBoxEmail;
+		private System.Windows.Forms.TextBox textBoxSchule;
+		private System.Windows.Forms.TextBox textBoxLehrkraft;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.ComboBox comboBox2;
+		private System.Windows.Forms.ComboBox comboBoxKlasse;
+		private System.Windows.Forms.ComboBox comboBoxAbschluss;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;

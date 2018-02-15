@@ -33,10 +33,10 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.comboBox2 = new System.Windows.Forms.ComboBox();
-			this.comboBox3 = new System.Windows.Forms.ComboBox();
-			this.comboBox4 = new System.Windows.Forms.ComboBox();
+			this.comboBox9Uhr = new System.Windows.Forms.ComboBox();
+			this.comboBox10Uhr = new System.Windows.Forms.ComboBox();
+			this.comboBox11Uhr = new System.Windows.Forms.ComboBox();
+			this.comboBox12Uhr = new System.Windows.Forms.ComboBox();
 			this.buttonSpeichern = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
@@ -84,41 +84,41 @@
 			this.label4.TabIndex = 7;
 			this.label4.Text = "Workshop 12:00 Uhr";
 			// 
-			// comboBox1
+			// comboBox9Uhr
 			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(134, 132);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(197, 21);
-			this.comboBox1.TabIndex = 8;
+			this.comboBox9Uhr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox9Uhr.FormattingEnabled = true;
+			this.comboBox9Uhr.Location = new System.Drawing.Point(134, 132);
+			this.comboBox9Uhr.Name = "comboBox9Uhr";
+			this.comboBox9Uhr.Size = new System.Drawing.Size(197, 21);
+			this.comboBox9Uhr.TabIndex = 8;
 			// 
-			// comboBox2
+			// comboBox10Uhr
 			// 
-			this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox2.FormattingEnabled = true;
-			this.comboBox2.Location = new System.Drawing.Point(134, 159);
-			this.comboBox2.Name = "comboBox2";
-			this.comboBox2.Size = new System.Drawing.Size(197, 21);
-			this.comboBox2.TabIndex = 9;
+			this.comboBox10Uhr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox10Uhr.FormattingEnabled = true;
+			this.comboBox10Uhr.Location = new System.Drawing.Point(134, 159);
+			this.comboBox10Uhr.Name = "comboBox10Uhr";
+			this.comboBox10Uhr.Size = new System.Drawing.Size(197, 21);
+			this.comboBox10Uhr.TabIndex = 9;
 			// 
-			// comboBox3
+			// comboBox11Uhr
 			// 
-			this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox3.FormattingEnabled = true;
-			this.comboBox3.Location = new System.Drawing.Point(134, 186);
-			this.comboBox3.Name = "comboBox3";
-			this.comboBox3.Size = new System.Drawing.Size(197, 21);
-			this.comboBox3.TabIndex = 10;
+			this.comboBox11Uhr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox11Uhr.FormattingEnabled = true;
+			this.comboBox11Uhr.Location = new System.Drawing.Point(134, 186);
+			this.comboBox11Uhr.Name = "comboBox11Uhr";
+			this.comboBox11Uhr.Size = new System.Drawing.Size(197, 21);
+			this.comboBox11Uhr.TabIndex = 10;
 			// 
-			// comboBox4
+			// comboBox12Uhr
 			// 
-			this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox4.FormattingEnabled = true;
-			this.comboBox4.Location = new System.Drawing.Point(134, 213);
-			this.comboBox4.Name = "comboBox4";
-			this.comboBox4.Size = new System.Drawing.Size(197, 21);
-			this.comboBox4.TabIndex = 11;
+			this.comboBox12Uhr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox12Uhr.FormattingEnabled = true;
+			this.comboBox12Uhr.Location = new System.Drawing.Point(134, 213);
+			this.comboBox12Uhr.Name = "comboBox12Uhr";
+			this.comboBox12Uhr.Size = new System.Drawing.Size(197, 21);
+			this.comboBox12Uhr.TabIndex = 11;
 			// 
 			// buttonSpeichern
 			// 
@@ -134,10 +134,10 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.Controls.Add(this.buttonSpeichern);
-			this.Controls.Add(this.comboBox4);
-			this.Controls.Add(this.comboBox3);
-			this.Controls.Add(this.comboBox2);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.comboBox12Uhr);
+			this.Controls.Add(this.comboBox11Uhr);
+			this.Controls.Add(this.comboBox10Uhr);
+			this.Controls.Add(this.comboBox9Uhr);
 			this.Controls.Add(this.label4);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
@@ -157,10 +157,10 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.ComboBox comboBox1;
-		private System.Windows.Forms.ComboBox comboBox2;
-		private System.Windows.Forms.ComboBox comboBox3;
-		private System.Windows.Forms.ComboBox comboBox4;
+		private System.Windows.Forms.ComboBox comboBox9Uhr;
+		private System.Windows.Forms.ComboBox comboBox10Uhr;
+		private System.Windows.Forms.ComboBox comboBox11Uhr;
+		private System.Windows.Forms.ComboBox comboBox12Uhr;
 		private System.Windows.Forms.Button buttonSpeichern;
 	}
 }

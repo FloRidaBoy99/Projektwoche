@@ -34,18 +34,18 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.label2 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.textBoxNr = new System.Windows.Forms.TextBox();
+			this.textBoxTitel = new System.Windows.Forms.TextBox();
+			this.textBoxBeschreibung = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.textBoxKosten = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.textBoxVoraussetzungen = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.textBoxTeilnehmerMin = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.textBoxTeilnehmerMax = new System.Windows.Forms.TextBox();
+			this.buttonSpeichern = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// listBoxWorkshops
@@ -101,27 +101,27 @@
 			this.label3.TabIndex = 5;
 			this.label3.Text = "Beschreibung";
 			// 
-			// textBox1
+			// textBoxNr
 			// 
-			this.textBox1.Location = new System.Drawing.Point(131, 21);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(100, 20);
-			this.textBox1.TabIndex = 6;
+			this.textBoxNr.Location = new System.Drawing.Point(131, 21);
+			this.textBoxNr.Name = "textBoxNr";
+			this.textBoxNr.Size = new System.Drawing.Size(100, 20);
+			this.textBoxNr.TabIndex = 6;
 			// 
-			// textBox2
+			// textBoxTitel
 			// 
-			this.textBox2.Location = new System.Drawing.Point(258, 20);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(403, 20);
-			this.textBox2.TabIndex = 7;
+			this.textBoxTitel.Location = new System.Drawing.Point(258, 20);
+			this.textBoxTitel.Name = "textBoxTitel";
+			this.textBoxTitel.Size = new System.Drawing.Size(403, 20);
+			this.textBoxTitel.TabIndex = 7;
 			// 
-			// textBox3
+			// textBoxBeschreibung
 			// 
-			this.textBox3.Location = new System.Drawing.Point(130, 72);
-			this.textBox3.Multiline = true;
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(531, 80);
-			this.textBox3.TabIndex = 8;
+			this.textBoxBeschreibung.Location = new System.Drawing.Point(130, 72);
+			this.textBoxBeschreibung.Multiline = true;
+			this.textBoxBeschreibung.Name = "textBoxBeschreibung";
+			this.textBoxBeschreibung.Size = new System.Drawing.Size(531, 80);
+			this.textBoxBeschreibung.TabIndex = 8;
 			// 
 			// label4
 			// 
@@ -132,12 +132,12 @@
 			this.label4.TabIndex = 9;
 			this.label4.Text = "Kosten";
 			// 
-			// textBox4
+			// textBoxKosten
 			// 
-			this.textBox4.Location = new System.Drawing.Point(133, 184);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(100, 20);
-			this.textBox4.TabIndex = 10;
+			this.textBoxKosten.Location = new System.Drawing.Point(133, 184);
+			this.textBoxKosten.Name = "textBoxKosten";
+			this.textBoxKosten.Size = new System.Drawing.Size(100, 20);
+			this.textBoxKosten.TabIndex = 10;
 			// 
 			// label5
 			// 
@@ -148,12 +148,12 @@
 			this.label5.TabIndex = 11;
 			this.label5.Text = "Voraussetzungen";
 			// 
-			// textBox5
+			// textBoxVoraussetzungen
 			// 
-			this.textBox5.Location = new System.Drawing.Point(258, 183);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(100, 20);
-			this.textBox5.TabIndex = 12;
+			this.textBoxVoraussetzungen.Location = new System.Drawing.Point(258, 183);
+			this.textBoxVoraussetzungen.Name = "textBoxVoraussetzungen";
+			this.textBoxVoraussetzungen.Size = new System.Drawing.Size(100, 20);
+			this.textBoxVoraussetzungen.TabIndex = 12;
 			// 
 			// label6
 			// 
@@ -164,12 +164,12 @@
 			this.label6.TabIndex = 13;
 			this.label6.Text = "Teilnehmer Min";
 			// 
-			// textBox6
+			// textBoxTeilnehmerMin
 			// 
-			this.textBox6.Location = new System.Drawing.Point(379, 183);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(100, 20);
-			this.textBox6.TabIndex = 14;
+			this.textBoxTeilnehmerMin.Location = new System.Drawing.Point(379, 183);
+			this.textBoxTeilnehmerMin.Name = "textBoxTeilnehmerMin";
+			this.textBoxTeilnehmerMin.Size = new System.Drawing.Size(100, 20);
+			this.textBoxTeilnehmerMin.TabIndex = 14;
 			// 
 			// label7
 			// 
@@ -180,38 +180,38 @@
 			this.label7.TabIndex = 15;
 			this.label7.Text = "Teilnehmer Max";
 			// 
-			// textBox7
+			// textBoxTeilnehmerMax
 			// 
-			this.textBox7.Location = new System.Drawing.Point(514, 183);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(100, 20);
-			this.textBox7.TabIndex = 16;
+			this.textBoxTeilnehmerMax.Location = new System.Drawing.Point(514, 183);
+			this.textBoxTeilnehmerMax.Name = "textBoxTeilnehmerMax";
+			this.textBoxTeilnehmerMax.Size = new System.Drawing.Size(100, 20);
+			this.textBoxTeilnehmerMax.TabIndex = 16;
 			// 
-			// button1
+			// buttonSpeichern
 			// 
-			this.button1.Location = new System.Drawing.Point(133, 266);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(75, 23);
-			this.button1.TabIndex = 17;
-			this.button1.Text = "Speichern";
-			this.button1.UseVisualStyleBackColor = true;
+			this.buttonSpeichern.Location = new System.Drawing.Point(133, 266);
+			this.buttonSpeichern.Name = "buttonSpeichern";
+			this.buttonSpeichern.Size = new System.Drawing.Size(75, 23);
+			this.buttonSpeichern.TabIndex = 17;
+			this.buttonSpeichern.Text = "Speichern";
+			this.buttonSpeichern.UseVisualStyleBackColor = true;
 			// 
 			// EditWorkshop
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.button1);
-			this.Controls.Add(this.textBox7);
+			this.Controls.Add(this.buttonSpeichern);
+			this.Controls.Add(this.textBoxTeilnehmerMax);
 			this.Controls.Add(this.label7);
-			this.Controls.Add(this.textBox6);
+			this.Controls.Add(this.textBoxTeilnehmerMin);
 			this.Controls.Add(this.label6);
-			this.Controls.Add(this.textBox5);
+			this.Controls.Add(this.textBoxVoraussetzungen);
 			this.Controls.Add(this.label5);
-			this.Controls.Add(this.textBox4);
+			this.Controls.Add(this.textBoxKosten);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.textBox3);
-			this.Controls.Add(this.textBox2);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.textBoxBeschreibung);
+			this.Controls.Add(this.textBoxTitel);
+			this.Controls.Add(this.textBoxNr);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
@@ -233,17 +233,17 @@
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox textBoxNr;
+		private System.Windows.Forms.TextBox textBoxTitel;
+		private System.Windows.Forms.TextBox textBoxBeschreibung;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox textBoxKosten;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox textBoxVoraussetzungen;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.TextBox textBoxTeilnehmerMin;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox textBox7;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.TextBox textBoxTeilnehmerMax;
+		private System.Windows.Forms.Button buttonSpeichern;
 	}
 }

@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.menuStrip1 = new System.Windows.Forms.MenuStrip();
 			this.dateiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.neuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -38,16 +37,9 @@
 			this.workshopToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.schülerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
 			this.wahlToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+			this.panel1 = new System.Windows.Forms.Panel();
 			this.menuStrip1.SuspendLayout();
 			this.SuspendLayout();
-			// 
-			// groupBox1
-			// 
-			this.groupBox1.Location = new System.Drawing.Point(13, 27);
-			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(552, 357);
-			this.groupBox1.TabIndex = 0;
-			this.groupBox1.TabStop = false;
 			// 
 			// menuStrip1
 			// 
@@ -67,25 +59,25 @@
             this.neuToolStripMenuItem,
             this.öffnenToolStripMenuItem});
 			this.dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
-			this.dateiToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+			this.dateiToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
 			this.dateiToolStripMenuItem.Text = "Datei";
 			// 
 			// neuToolStripMenuItem
 			// 
 			this.neuToolStripMenuItem.Name = "neuToolStripMenuItem";
-			this.neuToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+			this.neuToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
 			this.neuToolStripMenuItem.Text = "Neu";
 			// 
 			// öffnenToolStripMenuItem
 			// 
 			this.öffnenToolStripMenuItem.Name = "öffnenToolStripMenuItem";
-			this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
+			this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
 			this.öffnenToolStripMenuItem.Text = "Öffnen";
 			// 
 			// einstellungenToolStripMenuItem
 			// 
 			this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
-			this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+			this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
 			this.einstellungenToolStripMenuItem.Text = "Einstellungen";
 			// 
 			// ansichtToolStripMenuItem
@@ -95,33 +87,40 @@
             this.schülerToolStripMenuItem,
             this.wahlToolStripMenuItem});
 			this.ansichtToolStripMenuItem.Name = "ansichtToolStripMenuItem";
-			this.ansichtToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+			this.ansichtToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
 			this.ansichtToolStripMenuItem.Text = "Ansicht";
 			// 
 			// workshopToolStripMenuItem
 			// 
 			this.workshopToolStripMenuItem.Name = "workshopToolStripMenuItem";
-			this.workshopToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.workshopToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
 			this.workshopToolStripMenuItem.Text = "Workshop";
 			// 
 			// schülerToolStripMenuItem
 			// 
 			this.schülerToolStripMenuItem.Name = "schülerToolStripMenuItem";
-			this.schülerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.schülerToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
 			this.schülerToolStripMenuItem.Text = "Schüler";
 			// 
 			// wahlToolStripMenuItem
 			// 
 			this.wahlToolStripMenuItem.Name = "wahlToolStripMenuItem";
-			this.wahlToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.wahlToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
 			this.wahlToolStripMenuItem.Text = "Wahl";
+			// 
+			// panel1
+			// 
+			this.panel1.Location = new System.Drawing.Point(12, 27);
+			this.panel1.Name = "panel1";
+			this.panel1.Size = new System.Drawing.Size(553, 357);
+			this.panel1.TabIndex = 2;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(577, 396);
-			this.Controls.Add(this.groupBox1);
+			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.menuStrip1);
 			this.Name = "Form1";
 			this.Text = "Projektwoche";
@@ -134,7 +133,6 @@
 
 		#endregion
 
-		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.MenuStrip menuStrip1;
 		private System.Windows.Forms.ToolStripMenuItem dateiToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem neuToolStripMenuItem;
@@ -144,6 +142,7 @@
 		private System.Windows.Forms.ToolStripMenuItem workshopToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem schülerToolStripMenuItem;
 		private System.Windows.Forms.ToolStripMenuItem wahlToolStripMenuItem;
+		private System.Windows.Forms.Panel panel1;
 	}
 }
 

@@ -16,3 +16,15 @@ H:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.exe
 H:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.pdb
 F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.exe
 F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.pdb
+F:\PT\Projektwoche\Projektwoche\bin\Debug\Projektwoche.exe
+F:\PT\Projektwoche\Projektwoche\bin\Debug\Projektwoche.pdb
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.csprojResolveAssemblyReference.cache
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.Form1.resources
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.FormNeu.resources
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.FormOeffnen.resources
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.Properties.Resources.resources
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.UserControls.EditWorkshop.resources
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.UserControls.Schueler.resources
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.UserControls.Settings.resources
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.UserControls.Wahl.resources
+F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.csproj.GenerateResource.Cache

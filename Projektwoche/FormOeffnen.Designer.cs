@@ -28,18 +28,18 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.comboBoxAuswahl = new System.Windows.Forms.ComboBox();
 			this.buttonOeffnen = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
-			// comboBox1
+			// comboBoxAuswahl
 			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(41, 26);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(121, 21);
-			this.comboBox1.TabIndex = 0;
+			this.comboBoxAuswahl.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBoxAuswahl.FormattingEnabled = true;
+			this.comboBoxAuswahl.Location = new System.Drawing.Point(41, 26);
+			this.comboBoxAuswahl.Name = "comboBoxAuswahl";
+			this.comboBoxAuswahl.Size = new System.Drawing.Size(121, 21);
+			this.comboBoxAuswahl.TabIndex = 0;
 			// 
 			// buttonOeffnen
 			// 
@@ -56,7 +56,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(210, 114);
 			this.Controls.Add(this.buttonOeffnen);
-			this.Controls.Add(this.comboBox1);
+			this.Controls.Add(this.comboBoxAuswahl);
 			this.Name = "FormOeffnen";
 			this.Text = "FormOeffnen";
 			this.ResumeLayout(false);
@@ -65,7 +65,7 @@
 
 		#endregion
 
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox comboBoxAuswahl;
 		private System.Windows.Forms.Button buttonOeffnen;
 	}
 }
