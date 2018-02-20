@@ -28,3 +28,4 @@ F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.UserControls.Schueler.res
 F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.UserControls.Settings.resources
 F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.UserControls.Wahl.resources
 F:\PT\Projektwoche\Projektwoche\obj\Debug\Projektwoche.csproj.GenerateResource.Cache
+F:\PT\Projektwoche\Projektwoche\bin\Debug\MySql.Data.Entity.dll

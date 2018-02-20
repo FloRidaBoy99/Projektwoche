@@ -49,7 +49,7 @@
             this.ansichtToolStripMenuItem});
 			this.menuStrip1.Location = new System.Drawing.Point(0, 0);
 			this.menuStrip1.Name = "menuStrip1";
-			this.menuStrip1.Size = new System.Drawing.Size(577, 24);
+			this.menuStrip1.Size = new System.Drawing.Size(688, 24);
 			this.menuStrip1.TabIndex = 1;
 			this.menuStrip1.Text = "menuStrip1";
 			// 
@@ -59,27 +59,28 @@
             this.neuToolStripMenuItem,
             this.öffnenToolStripMenuItem});
 			this.dateiToolStripMenuItem.Name = "dateiToolStripMenuItem";
-			this.dateiToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
+			this.dateiToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
 			this.dateiToolStripMenuItem.Text = "Datei";
 			// 
 			// neuToolStripMenuItem
 			// 
 			this.neuToolStripMenuItem.Name = "neuToolStripMenuItem";
-			this.neuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.neuToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
 			this.neuToolStripMenuItem.Text = "Neu";
 			// 
 			// öffnenToolStripMenuItem
 			// 
 			this.öffnenToolStripMenuItem.Name = "öffnenToolStripMenuItem";
-			this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
 			this.öffnenToolStripMenuItem.Text = "Öffnen";
 			this.öffnenToolStripMenuItem.Click += new System.EventHandler(this.öffnenToolStripMenuItem_Click);
 			// 
 			// einstellungenToolStripMenuItem
 			// 
 			this.einstellungenToolStripMenuItem.Name = "einstellungenToolStripMenuItem";
-			this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(90, 20);
+			this.einstellungenToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
 			this.einstellungenToolStripMenuItem.Text = "Einstellungen";
+			this.einstellungenToolStripMenuItem.Click += new System.EventHandler(this.einstellungenToolStripMenuItem_Click);
 			// 
 			// ansichtToolStripMenuItem
 			// 
@@ -88,43 +89,45 @@
             this.schülerToolStripMenuItem,
             this.wahlToolStripMenuItem});
 			this.ansichtToolStripMenuItem.Name = "ansichtToolStripMenuItem";
-			this.ansichtToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
+			this.ansichtToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
 			this.ansichtToolStripMenuItem.Text = "Ansicht";
 			// 
 			// workshopToolStripMenuItem
 			// 
 			this.workshopToolStripMenuItem.Name = "workshopToolStripMenuItem";
-			this.workshopToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.workshopToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
 			this.workshopToolStripMenuItem.Text = "Workshop";
+			this.workshopToolStripMenuItem.Click += new System.EventHandler(this.workshopToolStripMenuItem_Click);
 			// 
 			// schülerToolStripMenuItem
 			// 
 			this.schülerToolStripMenuItem.Name = "schülerToolStripMenuItem";
-			this.schülerToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.schülerToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
 			this.schülerToolStripMenuItem.Text = "Schüler";
 			// 
 			// wahlToolStripMenuItem
 			// 
 			this.wahlToolStripMenuItem.Name = "wahlToolStripMenuItem";
-			this.wahlToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
+			this.wahlToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
 			this.wahlToolStripMenuItem.Text = "Wahl";
 			// 
 			// panel1
 			// 
 			this.panel1.Location = new System.Drawing.Point(12, 27);
 			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(553, 357);
+			this.panel1.Size = new System.Drawing.Size(664, 357);
 			this.panel1.TabIndex = 2;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(577, 396);
+			this.ClientSize = new System.Drawing.Size(688, 396);
 			this.Controls.Add(this.panel1);
 			this.Controls.Add(this.menuStrip1);
 			this.Name = "Form1";
 			this.Text = "Projektwoche";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
 			this.menuStrip1.ResumeLayout(false);
 			this.menuStrip1.PerformLayout();
 			this.ResumeLayout(false);

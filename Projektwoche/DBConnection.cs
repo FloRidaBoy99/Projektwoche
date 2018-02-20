@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MySql.Data;
+using MySql.Data.MySqlClient;
 
 namespace Projektwoche
 {
@@ -33,10 +31,14 @@ namespace Projektwoche
 			DBConnection.isProjektwoche = Properties.Settings.Default.isProjektwoche;
 		}
 
-		public static string getConnectionString()
+		public static string createConnectionString()
 		{
 			return String.Format("server={0};uid={1};pw={2};database={3}",
 				DBConnection.server, DBConnection.user, DBConnection.pw, DBConnection.database);
+		}
+		public static MySqlConnection createConnection()
+		{
+			return new MySqlConnection(DBConnection.createConnectionString());
 		}
 	}
 }

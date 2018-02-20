@@ -55,6 +55,7 @@
 			this.listBoxWorkshops.Name = "listBoxWorkshops";
 			this.listBoxWorkshops.Size = new System.Drawing.Size(120, 225);
 			this.listBoxWorkshops.TabIndex = 0;
+			this.listBoxWorkshops.SelectedIndexChanged += new System.EventHandler(this.listBoxWorkshops_SelectedIndexChanged);
 			// 
 			// buttonNeu
 			// 
@@ -64,6 +65,7 @@
 			this.buttonNeu.TabIndex = 1;
 			this.buttonNeu.Text = "Neu";
 			this.buttonNeu.UseVisualStyleBackColor = true;
+			this.buttonNeu.Click += new System.EventHandler(this.buttonNeu_Click);
 			// 
 			// buttonLoeschen
 			// 
@@ -73,6 +75,7 @@
 			this.buttonLoeschen.TabIndex = 2;
 			this.buttonLoeschen.Text = "Löschen";
 			this.buttonLoeschen.UseVisualStyleBackColor = true;
+			this.buttonLoeschen.Click += new System.EventHandler(this.buttonLoeschen_Click);
 			// 
 			// label1
 			// 
@@ -195,6 +198,7 @@
 			this.buttonSpeichern.TabIndex = 17;
 			this.buttonSpeichern.Text = "Speichern";
 			this.buttonSpeichern.UseVisualStyleBackColor = true;
+			this.buttonSpeichern.Click += new System.EventHandler(this.buttonSpeichern_Click);
 			// 
 			// EditWorkshop
 			// 

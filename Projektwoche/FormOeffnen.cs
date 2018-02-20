@@ -13,7 +13,7 @@ namespace Projektwoche
 			InitializeComponent();
 			try
 			{
-				MySqlConnection db = new MySqlConnection(DBConnection.getConnectionString());
+				MySqlConnection db = DBConnection.createConnection();
 				MySqlCommand datenbanken = new MySqlCommand("SHOW DATABASES", db);
 
 				db.Open();

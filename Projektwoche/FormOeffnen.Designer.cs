@@ -59,7 +59,7 @@
 			this.Controls.Add(this.buttonOeffnen);
 			this.Controls.Add(this.comboBoxAuswahl);
 			this.Name = "FormOeffnen";
-			this.Text = " ";
+			this.Text = "Datenbank auswählen";
 			this.ResumeLayout(false);
 
 		}
