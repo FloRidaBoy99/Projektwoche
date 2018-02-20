@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data;
+using MySql.Data.MySqlClient;
+
 
 namespace Projektwoche
 {
@@ -15,6 +11,31 @@ namespace Projektwoche
 		public FormOeffnen()
 		{
 			InitializeComponent();
+			try
+			{
+				MySqlConnection db = new MySqlConnection(DBConnection.getConnectionString());
+				MySqlCommand datenbanken = new MySqlCommand("SHOW DATABASES", db);
+
+				db.Open();
+				MySqlDataReader reader = datenbanken.ExecuteReader();
+				while (reader.Read())
+				{
+					this.comboBoxAuswahl.Items.Add(reader["database"].ToString());
+				}
+				this.comboBoxAuswahl.SelectedIndex = 0;
+			}
+			catch (Exception e)
+			{
+				MessageBox.Show(e.Message);
+				this.Close();
+			}
+
+		}
+
+		private void buttonOeffnen_Click(object sender, EventArgs e)
+		{
+			DBConnection.database = this.comboBoxAuswahl.SelectedText.ToString();
+			DBConnection.saveData();
 		}
 	}
 }

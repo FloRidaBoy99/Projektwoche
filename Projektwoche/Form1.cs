@@ -15,6 +15,13 @@ namespace Projektwoche
 		public Form1()
 		{
 			InitializeComponent();
+			DBConnection.getData();
+		}
+
+		private void öffnenToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			FormOeffnen formOeffnen = new FormOeffnen();
+			formOeffnen.ShowDialog();
 		}
 	}
 }

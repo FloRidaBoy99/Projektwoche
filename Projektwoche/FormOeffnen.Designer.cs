@@ -43,22 +43,23 @@
 			// 
 			// buttonOeffnen
 			// 
-			this.buttonOeffnen.Location = new System.Drawing.Point(65, 53);
+			this.buttonOeffnen.Location = new System.Drawing.Point(65, 62);
 			this.buttonOeffnen.Name = "buttonOeffnen";
 			this.buttonOeffnen.Size = new System.Drawing.Size(75, 23);
 			this.buttonOeffnen.TabIndex = 1;
 			this.buttonOeffnen.Text = "Öffnen";
 			this.buttonOeffnen.UseVisualStyleBackColor = true;
+			this.buttonOeffnen.Click += new System.EventHandler(this.buttonOeffnen_Click);
 			// 
 			// FormOeffnen
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(210, 114);
+			this.ClientSize = new System.Drawing.Size(210, 106);
 			this.Controls.Add(this.buttonOeffnen);
 			this.Controls.Add(this.comboBoxAuswahl);
 			this.Name = "FormOeffnen";
-			this.Text = "FormOeffnen";
+			this.Text = " ";
 			this.ResumeLayout(false);
 
 		}
