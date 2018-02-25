@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Projektwoche
@@ -19,7 +12,6 @@ namespace Projektwoche
 		{
 			InitializeComponent();
 			DBConnection.getData();
-
 
 			this.ucWorkshop.Dock = DockStyle.Fill;
 			this.ucSettings.Dock = DockStyle.Fill;
@@ -46,7 +38,14 @@ namespace Projektwoche
 		private void einstellungenToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			this.panel1.Controls.Clear();
+			this.ucSettings.loadData();
 			this.panel1.Controls.Add(this.ucSettings);
+		}
+
+		private void neuToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			FormNeu formNeu = new FormNeu();
+			formNeu.ShowDialog();
 		}
 	}
 }

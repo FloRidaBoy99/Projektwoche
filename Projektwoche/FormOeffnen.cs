@@ -34,8 +34,9 @@ namespace Projektwoche
 
 		private void buttonOeffnen_Click(object sender, EventArgs e)
 		{
-			DBConnection.database = this.comboBoxAuswahl.SelectedText.ToString();
+			DBConnection.database = this.comboBoxAuswahl.SelectedItem.ToString();
 			DBConnection.saveData();
+			this.Close();
 		}
 	}
 }

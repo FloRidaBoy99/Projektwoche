@@ -80,6 +80,8 @@
 			this.textBoxServer.Name = "textBoxServer";
 			this.textBoxServer.Size = new System.Drawing.Size(100, 20);
 			this.textBoxServer.TabIndex = 4;
+			this.textBoxServer.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxServer_KeyUp);
+			this.textBoxServer.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxServer_Validating);
 			// 
 			// textBoxUserID
 			// 
@@ -87,6 +89,8 @@
 			this.textBoxUserID.Name = "textBoxUserID";
 			this.textBoxUserID.Size = new System.Drawing.Size(100, 20);
 			this.textBoxUserID.TabIndex = 5;
+			this.textBoxUserID.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxUserID_KeyUp);
+			this.textBoxUserID.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxUserID_Validating);
 			// 
 			// textBoxPasswort
 			// 
@@ -94,6 +98,8 @@
 			this.textBoxPasswort.Name = "textBoxPasswort";
 			this.textBoxPasswort.Size = new System.Drawing.Size(100, 20);
 			this.textBoxPasswort.TabIndex = 6;
+			this.textBoxPasswort.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxPasswort_KeyUp);
+			this.textBoxPasswort.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxPasswort_Validating);
 			// 
 			// textBoxDatenbank
 			// 
@@ -101,6 +107,8 @@
 			this.textBoxDatenbank.Name = "textBoxDatenbank";
 			this.textBoxDatenbank.Size = new System.Drawing.Size(100, 20);
 			this.textBoxDatenbank.TabIndex = 7;
+			this.textBoxDatenbank.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxDatenbank_KeyUp);
+			this.textBoxDatenbank.Validating += new System.ComponentModel.CancelEventHandler(this.textBoxDatenbank_Validating);
 			// 
 			// Settings
 			// 
