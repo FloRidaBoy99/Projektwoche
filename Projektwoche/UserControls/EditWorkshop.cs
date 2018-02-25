@@ -7,7 +7,7 @@ namespace Projektwoche.UserControls
 {
 	public partial class EditWorkshop : UserControl
 	{
-		private bool isNewEntry = false;
+		private bool isNewEntry = true;
 
 		public EditWorkshop()
 		{

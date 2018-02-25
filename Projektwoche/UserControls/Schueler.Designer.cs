@@ -55,6 +55,7 @@
 			this.listBoxSchueler.Name = "listBoxSchueler";
 			this.listBoxSchueler.Size = new System.Drawing.Size(157, 212);
 			this.listBoxSchueler.TabIndex = 0;
+			this.listBoxSchueler.SelectedIndexChanged += new System.EventHandler(this.listBoxSchueler_SelectedIndexChanged);
 			// 
 			// buttonNeu
 			// 
@@ -64,15 +65,17 @@
 			this.buttonNeu.TabIndex = 1;
 			this.buttonNeu.Text = "Neu";
 			this.buttonNeu.UseVisualStyleBackColor = true;
+			this.buttonNeu.Click += new System.EventHandler(this.buttonNeu_Click);
 			// 
 			// buttonLöschen
 			// 
-			this.buttonLöschen.Location = new System.Drawing.Point(86, 222);
+			this.buttonLöschen.Location = new System.Drawing.Point(85, 223);
 			this.buttonLöschen.Name = "buttonLöschen";
 			this.buttonLöschen.Size = new System.Drawing.Size(75, 23);
 			this.buttonLöschen.TabIndex = 2;
 			this.buttonLöschen.Text = "Löschen";
 			this.buttonLöschen.UseVisualStyleBackColor = true;
+			this.buttonLöschen.Click += new System.EventHandler(this.buttonLöschen_Click);
 			// 
 			// label1
 			// 
@@ -87,21 +90,21 @@
 			// 
 			this.textBoxVorname.Location = new System.Drawing.Point(325, 4);
 			this.textBoxVorname.Name = "textBoxVorname";
-			this.textBoxVorname.Size = new System.Drawing.Size(100, 20);
+			this.textBoxVorname.Size = new System.Drawing.Size(121, 20);
 			this.textBoxVorname.TabIndex = 5;
 			// 
 			// textBoxNachname
 			// 
 			this.textBoxNachname.Location = new System.Drawing.Point(325, 31);
 			this.textBoxNachname.Name = "textBoxNachname";
-			this.textBoxNachname.Size = new System.Drawing.Size(100, 20);
+			this.textBoxNachname.Size = new System.Drawing.Size(121, 20);
 			this.textBoxNachname.TabIndex = 6;
 			// 
 			// textBoxEmail
 			// 
 			this.textBoxEmail.Location = new System.Drawing.Point(325, 58);
 			this.textBoxEmail.Name = "textBoxEmail";
-			this.textBoxEmail.Size = new System.Drawing.Size(100, 20);
+			this.textBoxEmail.Size = new System.Drawing.Size(121, 20);
 			this.textBoxEmail.TabIndex = 7;
 			// 
 			// textBoxSchule
@@ -109,7 +112,7 @@
 			this.textBoxSchule.Enabled = false;
 			this.textBoxSchule.Location = new System.Drawing.Point(325, 140);
 			this.textBoxSchule.Name = "textBoxSchule";
-			this.textBoxSchule.Size = new System.Drawing.Size(100, 20);
+			this.textBoxSchule.Size = new System.Drawing.Size(121, 20);
 			this.textBoxSchule.TabIndex = 8;
 			// 
 			// textBoxLehrkraft
@@ -117,7 +120,7 @@
 			this.textBoxLehrkraft.Enabled = false;
 			this.textBoxLehrkraft.Location = new System.Drawing.Point(325, 167);
 			this.textBoxLehrkraft.Name = "textBoxLehrkraft";
-			this.textBoxLehrkraft.Size = new System.Drawing.Size(100, 20);
+			this.textBoxLehrkraft.Size = new System.Drawing.Size(121, 20);
 			this.textBoxLehrkraft.TabIndex = 9;
 			// 
 			// label2
@@ -195,12 +198,13 @@
 			// 
 			// buttonSpeichern
 			// 
-			this.buttonSpeichern.Location = new System.Drawing.Point(185, 221);
+			this.buttonSpeichern.Location = new System.Drawing.Point(185, 223);
 			this.buttonSpeichern.Name = "buttonSpeichern";
 			this.buttonSpeichern.Size = new System.Drawing.Size(75, 23);
 			this.buttonSpeichern.TabIndex = 18;
 			this.buttonSpeichern.Text = "Speichern";
 			this.buttonSpeichern.UseVisualStyleBackColor = true;
+			this.buttonSpeichern.Click += new System.EventHandler(this.buttonSpeichern_Click);
 			// 
 			// Schueler
 			// 

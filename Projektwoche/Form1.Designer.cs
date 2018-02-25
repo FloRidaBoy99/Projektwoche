@@ -65,14 +65,14 @@
 			// neuToolStripMenuItem
 			// 
 			this.neuToolStripMenuItem.Name = "neuToolStripMenuItem";
-			this.neuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.neuToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
 			this.neuToolStripMenuItem.Text = "Neu";
 			this.neuToolStripMenuItem.Click += new System.EventHandler(this.neuToolStripMenuItem_Click);
 			// 
 			// öffnenToolStripMenuItem
 			// 
 			this.öffnenToolStripMenuItem.Name = "öffnenToolStripMenuItem";
-			this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+			this.öffnenToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
 			this.öffnenToolStripMenuItem.Text = "Öffnen";
 			this.öffnenToolStripMenuItem.Click += new System.EventHandler(this.öffnenToolStripMenuItem_Click);
 			// 
@@ -96,20 +96,21 @@
 			// workshopToolStripMenuItem
 			// 
 			this.workshopToolStripMenuItem.Name = "workshopToolStripMenuItem";
-			this.workshopToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+			this.workshopToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.workshopToolStripMenuItem.Text = "Workshop";
 			this.workshopToolStripMenuItem.Click += new System.EventHandler(this.workshopToolStripMenuItem_Click);
 			// 
 			// schülerToolStripMenuItem
 			// 
 			this.schülerToolStripMenuItem.Name = "schülerToolStripMenuItem";
-			this.schülerToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+			this.schülerToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.schülerToolStripMenuItem.Text = "Schüler";
+			this.schülerToolStripMenuItem.Click += new System.EventHandler(this.schülerToolStripMenuItem_Click);
 			// 
 			// wahlToolStripMenuItem
 			// 
 			this.wahlToolStripMenuItem.Name = "wahlToolStripMenuItem";
-			this.wahlToolStripMenuItem.Size = new System.Drawing.Size(122, 22);
+			this.wahlToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.wahlToolStripMenuItem.Text = "Wahl";
 			// 
 			// panel1

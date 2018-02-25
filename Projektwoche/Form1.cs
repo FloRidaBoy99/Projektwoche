@@ -7,6 +7,7 @@ namespace Projektwoche
 	{
 		private UserControls.EditWorkshop ucWorkshop = new UserControls.EditWorkshop();
 		private UserControls.Settings ucSettings = new UserControls.Settings();
+		private UserControls.Schueler ucSchueler = new UserControls.Schueler();
 
 		public Form1()
 		{
@@ -15,6 +16,7 @@ namespace Projektwoche
 
 			this.ucWorkshop.Dock = DockStyle.Fill;
 			this.ucSettings.Dock = DockStyle.Fill;
+			this.ucSchueler.Dock = DockStyle.Fill;
 		}
 
 		private void öffnenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -46,6 +48,14 @@ namespace Projektwoche
 		{
 			FormNeu formNeu = new FormNeu();
 			formNeu.ShowDialog();
+		}
+
+		private void schülerToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.panel1.Controls.Clear();
+			this.ucSchueler.loadCLasses();
+			this.ucSchueler.loadSchueler();
+			this.panel1.Controls.Add(this.ucSchueler);
 		}
 	}
 }
