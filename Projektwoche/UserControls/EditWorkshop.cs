@@ -7,8 +7,6 @@ namespace Projektwoche.UserControls
 {
 	public partial class EditWorkshop : UserControl
 	{
-		private bool isNewEntry = true;
-
 		public EditWorkshop()
 		{
 			InitializeComponent();
@@ -38,6 +36,10 @@ namespace Projektwoche.UserControls
 
 		private void listBoxWorkshops_SelectedIndexChanged(object sender, EventArgs e)
 		{
+			if (this.listBoxWorkshops.SelectedIndex == -1)
+			{
+				return;
+			}
 			try
 			{
 				string query = String.Format("SELECT * FROM workshop WHERE titel = '{0}'", this.listBoxWorkshops.Text.ToString());
@@ -57,7 +59,6 @@ namespace Projektwoche.UserControls
 					this.textBoxTeilnehmerMin.Text = reader["teilnehmerMin"].ToString();
 					this.textBoxTeilnehmerMax.Text = reader["teilnehmerMax"].ToString();
 				}
-				this.isNewEntry = false;
 			}
 			catch (Exception ex)
 			{
@@ -79,7 +80,7 @@ namespace Projektwoche.UserControls
 		private void buttonNeu_Click(object sender, EventArgs e)
 		{
 			this.clearTextboxes();
-			this.isNewEntry = true;			
+			this.listBoxWorkshops.ClearSelected();	
 		}
 
 		private void buttonSpeichern_Click(object sender, EventArgs e)
@@ -88,7 +89,7 @@ namespace Projektwoche.UserControls
 			{
 				MySqlConnection db = DBConnection.createConnection();
 				string query = "";
-				if (isNewEntry)
+				if (this.listBoxWorkshops.SelectedIndex == -1)
 				{
 					query = String.Format("INSERT INTO workshop SET nr = {0}, titel = '{1}', kosten = '{2}', beschreibung = '{3}', voraussetzungen = '{4}', teilnehmerMin = {5}, teilnehmerMax = {6}",
 						Convert.ToInt32(this.textBoxNr.Text),
@@ -117,7 +118,7 @@ namespace Projektwoche.UserControls
 
 				db.Open();
 				workshop.ExecuteNonQueryAsync();
-				if (this.listBoxWorkshops.SelectedIndex != -1 && isNewEntry == false)
+				if (this.listBoxWorkshops.SelectedIndex != -1)
 				{
 					int currIndex = this.listBoxWorkshops.SelectedIndex;
 					this.loadWorkshops();
@@ -138,6 +139,10 @@ namespace Projektwoche.UserControls
 
 		private void buttonLoeschen_Click(object sender, EventArgs e)
 		{
+			if (this.listBoxWorkshops.SelectedIndex == -1)
+			{
+				return;
+			}
 			try
 			{
 				string query = String.Format("DELETE FROM workshop WHERE titel = '{0}'", this.listBoxWorkshops.Text.ToString());

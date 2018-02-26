@@ -34,7 +34,7 @@ CREATE TABLE `klasse` (
   `klasseID` int(11) NOT NULL AUTO_INCREMENT,
   `bezeichnung` varchar(50) NOT NULL,
   PRIMARY KEY (`klasseID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -43,6 +43,7 @@ CREATE TABLE `klasse` (
 
 LOCK TABLES `klasse` WRITE;
 /*!40000 ALTER TABLE `klasse` DISABLE KEYS */;
+INSERT INTO `klasse` VALUES (1,'AIF11'),(2,'AIF21'),(3,'AIF31'),(4,'AIA11'),(5,'AIA21'),(6,'AIA31');
 /*!40000 ALTER TABLE `klasse` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -90,7 +91,7 @@ CREATE TABLE `schueler` (
   PRIMARY KEY (`schuelerID`),
   KEY `klasseID` (`klasseID`),
   CONSTRAINT `schueler_ibfk_1` FOREIGN KEY (`klasseID`) REFERENCES `klasse` (`klasseID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -99,6 +100,7 @@ CREATE TABLE `schueler` (
 
 LOCK TABLES `schueler` WRITE;
 /*!40000 ALTER TABLE `schueler` DISABLE KEYS */;
+INSERT INTO `schueler` VALUES (3,'asfa','adfa','adsfa',3),(5,'asfjj','afwdawf','sdfgh',4);
 /*!40000 ALTER TABLE `schueler` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -119,7 +121,7 @@ CREATE TABLE `workshop` (
   `teilnehmerMin` int(11) NOT NULL,
   `teilnehmerMax` int(11) NOT NULL,
   PRIMARY KEY (`workshopID`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -128,6 +130,7 @@ CREATE TABLE `workshop` (
 
 LOCK TABLES `workshop` WRITE;
 /*!40000 ALTER TABLE `workshop` DISABLE KEYS */;
+INSERT INTO `workshop` VALUES (2,0,'aijofhuieq','','asfafs','',0,0),(5,26,'kacken123','12','asdfaqdfqw','asd',1,2),(6,12,'asd','','afwfawe','asd',0,1);
 /*!40000 ALTER TABLE `workshop` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -140,4 +143,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-02-12 22:13:36
+-- Dump completed on 2018-02-26 21:18:53

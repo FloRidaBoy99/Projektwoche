@@ -7,8 +7,6 @@ namespace Projektwoche.UserControls
 {
 	public partial class Schueler : UserControl
 	{
-		private bool isNewEntry = true;
-
 		public Schueler()
 		{
 			InitializeComponent();
@@ -60,7 +58,6 @@ namespace Projektwoche.UserControls
 		{
 			this.clearTextboxes();
 			this.listBoxSchueler.ClearSelected();
-			this.isNewEntry = true;		
 		}
 
 		public void clearTextboxes()
@@ -70,7 +67,6 @@ namespace Projektwoche.UserControls
 			this.textBoxEmail.Text = "";
 
 			this.comboBoxKlasse.SelectedIndex = -1;
-
 		}
 
 		private void listBoxSchueler_SelectedIndexChanged(object sender, EventArgs e)
@@ -95,7 +91,6 @@ namespace Projektwoche.UserControls
 					this.textBoxEmail.Text = reader["email"].ToString();
 					this.comboBoxKlasse.SelectedIndex = this.comboBoxKlasse.Items.IndexOf(reader["bezeichnung"]);
 				}
-				this.isNewEntry = false;
 			}
 			catch (Exception ex)
 			{
@@ -110,7 +105,7 @@ namespace Projektwoche.UserControls
 			{
 				MySqlConnection db = DBConnection.createConnection();
 				string query = "";
-				if (this.isNewEntry)
+				if (this.listBoxSchueler.SelectedIndex == -1)
 				{
 					query = String.Format("INSERT INTO schueler SET vorname = '{0}', nachname = '{1}', email = '{2}', klasseID = (SELECT klasseID FROM klasse WHERE bezeichnung = '{3}')",
 						this.textBoxVorname.Text,
@@ -133,7 +128,7 @@ namespace Projektwoche.UserControls
 
 				db.Open();
 				schueler.ExecuteNonQuery();
-				if (this.listBoxSchueler.SelectedIndex != -1 && isNewEntry == false)
+				if (this.listBoxSchueler.SelectedIndex != -1)
 				{
 					int currIndex = this.listBoxSchueler.SelectedIndex;
 					this.loadSchueler();
@@ -170,7 +165,6 @@ namespace Projektwoche.UserControls
 				schueler.ExecuteNonQuery();
 				this.loadSchueler();
 				this.clearTextboxes();
-
 			}
 			catch (Exception ex)
 			{
