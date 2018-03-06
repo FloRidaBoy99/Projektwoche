@@ -8,15 +8,18 @@ namespace Projektwoche
 		private UserControls.EditWorkshop ucWorkshop = new UserControls.EditWorkshop();
 		private UserControls.Settings ucSettings = new UserControls.Settings();
 		private UserControls.Schueler ucSchueler = new UserControls.Schueler();
+		private UserControls.Wahl ucWahl = new UserControls.Wahl();
 
 		public Form1()
 		{
 			InitializeComponent();
 			DBConnection.getData();
+			DBConnection.createConnection();
 
 			this.ucWorkshop.Dock = DockStyle.Fill;
 			this.ucSettings.Dock = DockStyle.Fill;
 			this.ucSchueler.Dock = DockStyle.Fill;
+			this.ucWahl.Dock = DockStyle.Fill;
 		}
 
 		private void öffnenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -56,6 +59,14 @@ namespace Projektwoche
 			this.ucSchueler.loadCLasses();
 			this.ucSchueler.loadSchueler();
 			this.panel1.Controls.Add(this.ucSchueler);
+		}
+
+		private void wahlToolStripMenuItem_Click(object sender, EventArgs e)
+		{
+			this.panel1.Controls.Clear();
+			this.ucWahl.loadSchueler();
+			this.ucWahl.loadWorkshops();
+			this.panel1.Controls.Add(this.ucWahl);
 		}
 	}
 }

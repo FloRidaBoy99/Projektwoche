@@ -16,7 +16,7 @@ namespace Projektwoche.UserControls
 		{
 			try
 			{
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				MySqlCommand datenbanken = new MySqlCommand("SELECT * FROM schueler", db);
 
 				db.Open();
@@ -27,6 +27,7 @@ namespace Projektwoche.UserControls
 					string schueler = String.Format("{0}: {1}, {2}", reader["schuelerID"].ToString(), reader["nachname"].ToString(), reader["vorname"].ToString());
 					this.listBoxSchueler.Items.Add(schueler);
 				}
+				db.Close();
 			}
 			catch (Exception e)
 			{
@@ -38,7 +39,7 @@ namespace Projektwoche.UserControls
 		{
 			try
 			{
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				MySqlCommand datenbanken = new MySqlCommand("SELECT * FROM klasse", db);
 
 				db.Open();
@@ -47,6 +48,7 @@ namespace Projektwoche.UserControls
 				{
 					this.comboBoxKlasse.Items.Add(reader["bezeichnung"].ToString());
 				}
+				db.Close();
 			}
 			catch (Exception e)
 			{
@@ -79,7 +81,7 @@ namespace Projektwoche.UserControls
 			{
 				string query = String.Format("SELECT * FROM schueler s INNER JOIN klasse k ON k.klasseID = s.klasseID WHERE schuelerID = '{0}' ORDER BY nachname, vorname", this.listBoxSchueler.SelectedItem.ToString().Split(new string[] { ":" }, StringSplitOptions.None)[0]);
 
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				MySqlCommand workshop = new MySqlCommand(query, db);
 
 				db.Open();
@@ -91,6 +93,7 @@ namespace Projektwoche.UserControls
 					this.textBoxEmail.Text = reader["email"].ToString();
 					this.comboBoxKlasse.SelectedIndex = this.comboBoxKlasse.Items.IndexOf(reader["bezeichnung"]);
 				}
+				db.Close();
 			}
 			catch (Exception ex)
 			{
@@ -103,7 +106,7 @@ namespace Projektwoche.UserControls
 
 			try
 			{
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				string query = "";
 				if (this.listBoxSchueler.SelectedIndex == -1)
 				{
@@ -128,6 +131,7 @@ namespace Projektwoche.UserControls
 
 				db.Open();
 				schueler.ExecuteNonQuery();
+				db.Close();
 				if (this.listBoxSchueler.SelectedIndex != -1)
 				{
 					int currIndex = this.listBoxSchueler.SelectedIndex;
@@ -158,11 +162,12 @@ namespace Projektwoche.UserControls
 			{
 				string query = String.Format("DELETE FROM schueler WHERE schuelerID = '{0}'", this.listBoxSchueler.SelectedItem.ToString().Split(new string[] { ":" }, StringSplitOptions.None)[0]);
 
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				MySqlCommand schueler = new MySqlCommand(query, db);
 
 				db.Open();
 				schueler.ExecuteNonQuery();
+				db.Close();
 				this.loadSchueler();
 				this.clearTextboxes();
 			}

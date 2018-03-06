@@ -112,6 +112,7 @@
 			this.wahlToolStripMenuItem.Name = "wahlToolStripMenuItem";
 			this.wahlToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
 			this.wahlToolStripMenuItem.Text = "Wahl";
+			this.wahlToolStripMenuItem.Click += new System.EventHandler(this.wahlToolStripMenuItem_Click);
 			// 
 			// panel1
 			// 

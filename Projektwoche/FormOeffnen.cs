@@ -13,7 +13,7 @@ namespace Projektwoche
 			InitializeComponent();
 			try
 			{
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				MySqlCommand datenbanken = new MySqlCommand("SHOW DATABASES", db);
 
 				db.Open();
@@ -22,6 +22,7 @@ namespace Projektwoche
 				{
 					this.comboBoxAuswahl.Items.Add(reader["database"].ToString());
 				}
+				db.Close();
 				this.comboBoxAuswahl.SelectedIndex = 0;
 			}
 			catch (Exception e)

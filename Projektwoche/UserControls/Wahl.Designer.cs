@@ -47,6 +47,7 @@
 			this.listBoxSchueler.Name = "listBoxSchueler";
 			this.listBoxSchueler.Size = new System.Drawing.Size(404, 121);
 			this.listBoxSchueler.TabIndex = 0;
+			this.listBoxSchueler.SelectedIndexChanged += new System.EventHandler(this.listBoxSchueler_SelectedIndexChanged);
 			// 
 			// label1
 			// 
@@ -96,6 +97,7 @@
 			// comboBox10Uhr
 			// 
 			this.comboBox10Uhr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox10Uhr.Enabled = false;
 			this.comboBox10Uhr.FormattingEnabled = true;
 			this.comboBox10Uhr.Location = new System.Drawing.Point(134, 159);
 			this.comboBox10Uhr.Name = "comboBox10Uhr";
@@ -105,6 +107,7 @@
 			// comboBox11Uhr
 			// 
 			this.comboBox11Uhr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox11Uhr.Enabled = false;
 			this.comboBox11Uhr.FormattingEnabled = true;
 			this.comboBox11Uhr.Location = new System.Drawing.Point(134, 186);
 			this.comboBox11Uhr.Name = "comboBox11Uhr";
@@ -114,6 +117,7 @@
 			// comboBox12Uhr
 			// 
 			this.comboBox12Uhr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox12Uhr.Enabled = false;
 			this.comboBox12Uhr.FormattingEnabled = true;
 			this.comboBox12Uhr.Location = new System.Drawing.Point(134, 213);
 			this.comboBox12Uhr.Name = "comboBox12Uhr";
@@ -128,6 +132,7 @@
 			this.buttonSpeichern.TabIndex = 12;
 			this.buttonSpeichern.Text = "Speichern";
 			this.buttonSpeichern.UseVisualStyleBackColor = true;
+			this.buttonSpeichern.Click += new System.EventHandler(this.buttonSpeichern_Click);
 			// 
 			// Wahl
 			// 

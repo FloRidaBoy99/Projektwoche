@@ -17,7 +17,7 @@ namespace Projektwoche.UserControls
 		{
 			try
 			{
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				MySqlCommand alleWorkshops = new MySqlCommand("SELECT titel FROM workshop ORDER BY titel asc", db);
 
 				db.Open();
@@ -27,6 +27,7 @@ namespace Projektwoche.UserControls
 				{
 					this.listBoxWorkshops.Items.Add(reader["titel"].ToString());
 				}
+				db.Close();
 			}
 			catch (Exception e)
 			{
@@ -44,7 +45,7 @@ namespace Projektwoche.UserControls
 			{
 				string query = String.Format("SELECT * FROM workshop WHERE titel = '{0}'", this.listBoxWorkshops.Text.ToString());
 
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				MySqlCommand workshop = new MySqlCommand(query, db);
 
 				db.Open();
@@ -59,6 +60,7 @@ namespace Projektwoche.UserControls
 					this.textBoxTeilnehmerMin.Text = reader["teilnehmerMin"].ToString();
 					this.textBoxTeilnehmerMax.Text = reader["teilnehmerMax"].ToString();
 				}
+				db.Close();
 			}
 			catch (Exception ex)
 			{
@@ -87,7 +89,7 @@ namespace Projektwoche.UserControls
 		{
 			try
 			{
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				string query = "";
 				if (this.listBoxWorkshops.SelectedIndex == -1)
 				{
@@ -117,7 +119,8 @@ namespace Projektwoche.UserControls
 				MySqlCommand workshop = new MySqlCommand(query, db);
 
 				db.Open();
-				workshop.ExecuteNonQueryAsync();
+				workshop.ExecuteNonQuery();
+				db.Close();
 				if (this.listBoxWorkshops.SelectedIndex != -1)
 				{
 					int currIndex = this.listBoxWorkshops.SelectedIndex;
@@ -147,13 +150,14 @@ namespace Projektwoche.UserControls
 			{
 				string query = String.Format("DELETE FROM workshop WHERE titel = '{0}'", this.listBoxWorkshops.Text.ToString());
 
-				MySqlConnection db = DBConnection.createConnection();
+				MySqlConnection db = DBConnection.getConnection();
 				MySqlCommand workshop = new MySqlCommand(query, db);
 
 				db.Open();
 				workshop.ExecuteNonQuery();
 				this.loadWorkshops();
 				this.clearTextboxes();
+				db.Close();
 			}
 			catch (Exception ex)
 			{
